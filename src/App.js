@@ -8,6 +8,12 @@ function App() {
   return (
     <div className="App">
       <NavBar />
+
+
+      <div className="footer">
+        <h5 align="center">Captain Finn Web Designs</h5>
+        <p>Contact: </p> 
+      </div>
     </div>
   );
 }
