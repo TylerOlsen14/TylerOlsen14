@@ -31,32 +31,34 @@ export class NavBar extends Component {
     return (
       <div>
         <Navbar color="light" light expand="md">
-          <NavbarBrand href="/">reactstrap</NavbarBrand>
+          <div>
+            <NavbarBrand href="/">Tyler Olsen</NavbarBrand>            
+          </div>
           <img src={logo} alt={'../assets/Finn.jpg'} width="8%" /> 
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/components/">Components</NavLink>
+                <NavLink href="https://www.linkedin.com/in/tylerolsen14/">LinkedIn</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+                <NavLink href="https://github.com/TylerOlsen14">GitHub</NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
-                  Options
+                  Examples: 
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>
-                    Option 1
+                    Tyler's Tutors
                   </DropdownItem>
                   <DropdownItem>
-                    Option 2
+                    Salty Rogue Real Estate
                   </DropdownItem>
-                  <DropdownItem divider />
+                  {/* <DropdownItem divider />
                   <DropdownItem>
                     Reset
-                  </DropdownItem>
+                  </DropdownItem> */}
                 </DropdownMenu>
               </UncontrolledDropdown>
             </Nav>
