@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Modal, Button, ModalBody, ModalFooter } from "reactstrap";
 // import resume from "../assets/T.OlsenMay2.pdf";
-import resume from "./Tyler.js";
 import salty from "../assets/SaltyRoguePhoneCalls.png";
 import tutor from "../assets/TylersTutors.png";
 import "./index.css";
@@ -41,43 +40,50 @@ export class Index extends Component {
           </div>
         </div>
 
-        <section className="section section-light">
-          <h2>Salty Rogue Real Estate</h2>
-          <p>
-            A simple app meant to be used to make record of phone calls. This was made for a local real estate firm who makes a lot of phone calls and speaks with a lot of people. This is a simple way for them to keep track of who they talk to and what the conversation was about. 
-          </p>
-        </section>
-
-        <div className="pimg2 trans">
-          <div className="ptextScreenshot">
-            <div>
-              {/* <span className="border">Image two text</span> */}
-              <img src={salty} alt="MERN" className="appScreenshot" />
+        <a href="https://salty-rogue-app-front-of-house.herokuapp.com/" target="_blank">
+          <section className="section section-light">
+            <h2>Salty Rogue Real Estate</h2>
+            <p>
+              A simple app meant to be used to make record of phone calls. This was made for a local real estate firm who makes a lot of phone calls and speaks with a lot of people. This is a simple way for them to keep track of who they talk to and what the conversation was about. 
+            </p>
+          </section>
+        </a>  
+        <a href="https://salty-rogue-app-front-of-house.herokuapp.com/" target="_blank">  
+          <div className="pimg2 trans">
+            <div className="ptextScreenshot">
+              <div>
+                {/* <span className="border">Image two text</span> */}
+                <img src={salty} alt="MERN" className="appScreenshot" />
+              </div>
             </div>
           </div>
-        </div>
+        </a>
 
-        <section className="section section-dark">
-          <h2>Tyler's Tutors</h2>
-          <p>
-            Another simple app, this is meant ot track and re-call data for an imaginary tutoring service. We can track the teachers and the students in separate locations and we can update information as it changes. This uses Vue as a framework and Firebase/Firestore as a database.
-          </p>
-        </section>
+        <a href="https://tutordatabase-4958f.firebaseapp.com/" target="_blank">
+          <section className="section section-dark">
+            <h2>Tyler's Tutors</h2>
+            <p>
+              Another simple app, this is meant ot track and re-call data for an imaginary tutoring service. We can track the teachers and the students in separate locations and we can update information as it changes. This uses Vue as a framework and Firebase/Firestore as a database.
+            </p>
+          </section>
+        </a>
 
-        <div className="pimg3 trans">
-          <div className="ptextScreenshot">
-            <div>
-              <img
-                src={tutor}
-                alt="App written in Vue using Firebase/Firestore"
-                className="appScreenshot"
-              />
+        <a href="https://tutordatabase-4958f.firebaseapp.com/" target="_blank">
+          <div className="pimg3 trans">
+            <div className="ptextScreenshot">
+              <div>
+                <img
+                  src={tutor}
+                  alt="App written in Vue using Firebase/Firestore"
+                  className="appScreenshot"
+                />
+              </div>
+              {/* <span className="border">
+                Image three text
+              </span> */}
             </div>
-            {/* <span className="border">
-              Image three text
-            </span> */}
           </div>
-        </div>
+          </a>
 
         <section className="section section-dark">
           <h2>Resume</h2>
@@ -91,7 +97,7 @@ export class Index extends Component {
               <Button color="danger" onClick={this.toggle}>Resume</Button>
               <Modal isOpen={this.state.modal} toggle={this.toogle}>
                 <ModalBody>
-                  <a href="https://keen-bhaskara-274627.netlify.com/">
+                  <a href="https://keen-bhaskara-274627.netlify.com/" target="_blank">
                     Resume
                   </a>
                 </ModalBody>
