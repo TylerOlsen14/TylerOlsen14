@@ -1,15 +1,11 @@
-import React, { Component } from 'react'
-import { 
-  Modal, 
-  Button, 
-  ModalBody,
-  ModalFooter
- } from 'reactstrap'
- import resume from '../assets/T.OlsenMay2.pdf'
-import "./index.css"
+import React, { Component } from "react";
+import { Modal, Button, ModalBody, ModalFooter } from "reactstrap";
+import resume from "../assets/T.OlsenMay2.pdf";
+import salty from "../assets/SaltyRoguePhoneCalls.png";
+import tutor from "../assets/TylersTutors.png";
+import "./index.css";
 
 export class Index extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -29,65 +25,72 @@ export class Index extends Component {
       <div>
         <div className="pimg1">
           <div className="ptext">
-            <span className="border">
-              Tyler Olsen
-            </span>
+            <span className="border">Tyler Olsen</span>
           </div>
         </div>
 
         <section className="section section-light">
-          <h2>Section 1</h2>
-          <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p>
+          <h2>Salty Rogue Real Estate</h2>
+          <p>
+            A simple app meant to be used to make record of phone calls. This was made for a local real estate firm who makes a lot of phone calls and speaks with a lot of people. This is a simple way for them to keep track of who they talk to and what the conversation was about. 
+          </p>
         </section>
 
         <div className="pimg2 trans">
-          <div className="ptext">
-            <span className="border">
-              Image two text
-            </span>
+          <div className="ptextScreenshot">
+            <div>
+              {/* <span className="border">Image two text</span> */}
+              <img src={salty} alt="MERN" className="appScreenshot" />
+            </div>
           </div>
         </div>
 
         <section className="section section-dark">
-          <h2>Section 2</h2>
-          <p>The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me? " he thought. It wasn't a dream.</p>
+          <h2>Tyler's Tutors</h2>
+          <p>
+            Another simple app, this is meant ot track and re-call data for an imaginary tutoring service. We can track the teachers and the students in separate locations and we can update information as it changes. This uses Vue as a framework and Firebase/Firestore as a database.
+          </p>
         </section>
 
         <div className="pimg3 trans">
-          <div className="ptext">
-            <span className="border">
+          <div className="ptextScreenshot">
+            <div>
+              <img
+                src={tutor}
+                alt="App written in Vue using Firebase/Firestore"
+                className="appScreenshot"
+              />
+            </div>
+            {/* <span className="border">
               Image three text
-            </span>
+            </span> */}
           </div>
         </div>
 
         <section className="section section-dark">
-          <h2>Section 3</h2>
-          <p>His room, a proper human room although a little too small, lay peacefully between its four familiar walls.<br/>A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame.</p>
+          <h2>Resume</h2>
+          <p>I'm looking for work as a web developer. I moving into the tech field from education. I worked as a writing tutor at the end of my undergraduate studies, held a teaching assistant position during grad school, and most recently worked, briefly, as an 8th grade English teacher.</p>
+          <p>Though I may be new a young in the web development field, I learn very quickly. I am a dedicated worker who puts in the work needed to acheive mastery.</p>
         </section>
 
         <div className="pimg4 trans">
           <div className="ptext">
             <span className="border">
-              <Button onClick={this.toggle}>
-                Resume                
-              </Button>
-              <Modal id="myModal" class="modal" toggle={this.toogle}>
+              <Button color="danger" onClick={this.toggle}>Resume</Button>
+              <Modal isOpen={this.state.modal} toggle={this.toogle}>
                 <ModalBody>
-                <img src={resume} alt="?"/>
+                  <img src={resume} alt="?" />
                 </ModalBody>
                 <ModalFooter>
-                  <Button onClick={this.toggle}>X</Button>
+                  <Button color="secondary" onClick={this.toggle}>X</Button>
                 </ModalFooter>
               </Modal>
             </span>
           </div>
         </div>
-
-
       </div>
-    )
+    );
   }
 }
 
-export default Index
+export default Index;
