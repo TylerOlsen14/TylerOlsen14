@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Modal, Button, ModalBody, ModalFooter } from "reactstrap";
+import { Document, Page } from "react-pdf";
 import resume from "../assets/T.OlsenMay2.pdf";
 import salty from "../assets/SaltyRoguePhoneCalls.png";
 import tutor from "../assets/TylersTutors.png";
@@ -14,6 +15,17 @@ export class Index extends Component {
 
     this.toggle = this.toggle.bind(this);
   }
+
+  state= {
+    numPages: null,
+  }
+  
+  onDocumentLoadSuccess = (document) => {
+    const { numPages } = document;
+    this.setState({
+      numPages,
+    });
+  };
 
   toggle() {
     this.setState(prevState => ({
@@ -79,7 +91,13 @@ export class Index extends Component {
               <Button color="danger" onClick={this.toggle}>Resume</Button>
               <Modal isOpen={this.state.modal} toggle={this.toogle}>
                 <ModalBody>
-                  <img src={resume} alt="?" />
+                  {/* <img src={resume} alt="?" /> */}
+                  <Document
+                    file={resume} 
+                    onLoadSuccess={this.onDocumentLoadSuccess}
+                  >
+                    <Page pageNumber={1} />
+                  </Document>
                 </ModalBody>
                 <ModalFooter>
                   <Button color="secondary" onClick={this.toggle}>X</Button>
