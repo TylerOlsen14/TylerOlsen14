@@ -91,8 +91,9 @@ export class Index extends Component {
               <Button color="danger" onClick={this.toggle}>Resume</Button>
               <Modal isOpen={this.state.modal} toggle={this.toogle}>
                 <ModalBody>
-                  {/* <img src={resume} alt="?" /> */}
-                  
+                  <a href="https://keen-bhaskara-274627.netlify.com/">
+                    Resume
+                  </a>
                 </ModalBody>
                 <ModalFooter>
                   <Button color="secondary" onClick={this.toggle}>X</Button>
