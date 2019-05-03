@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.24675262.chunk.css",
+    "main.js": "/static/js/main.78c207bf.chunk.js",
+    "main.js.map": "/static/js/main.78c207bf.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/css/2.266e55a5.chunk.css": "/static/css/2.266e55a5.chunk.css",
+    "static/js/2.439d833b.chunk.js": "/static/js/2.439d833b.chunk.js",
+    "static/js/2.439d833b.chunk.js.map": "/static/js/2.439d833b.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.afe9f862a574aa0bacd2b3a258070022.js": "/precache-manifest.afe9f862a574aa0bacd2b3a258070022.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.266e55a5.chunk.css.map": "/static/css/2.266e55a5.chunk.css.map",
+    "static/css/main.24675262.chunk.css.map": "/static/css/main.24675262.chunk.css.map",
+    "static/media/Profile.jpg": "/static/media/Profile.0b6dee58.jpg",
+    "static/media/SaltyRoguePhoneCalls.png": "/static/media/SaltyRoguePhoneCalls.a98ab6aa.png",
+    "static/media/TylersTutors.png": "/static/media/TylersTutors.f0b9da22.png",
+    "static/media/index.css": "/static/media/close-up-door-focus-101808.3a35defa.jpg"
+  }
+}

@@ -1,5 +1,8 @@
 const url="../assets/T.OlsenMay2.pdf";
 
+// Loaded via <script> tag, create shortcut to access PDF.js exports.
+var pdfjsLib = window['pdfjs-dist/build/pdf'];
+
 let pdfDoc = null, 
   pageNum = 1,
   pageIsRendering = false,
@@ -68,8 +71,10 @@ const showNextPage = () => {
 }
 
 // Get document
-pdfjsLib.getDocument(url).promise.then(pdfDoc_ => {
-  pdfDoc = pdfDoc_;
+pdfjsLib
+  .getDocument(url)
+  .promise.then(pdfDoc_ => {
+    pdfDoc = pdfDoc_;
 
   document.querySelector('#page-count').textContent = pdfDoc.numPages;
 
