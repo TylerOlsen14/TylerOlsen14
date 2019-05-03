@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Modal, Button, ModalBody, ModalFooter } from "reactstrap";
-import { Document, Page } from "react-pdf";
-import resume from "../assets/T.OlsenMay2.pdf";
+// import resume from "../assets/T.OlsenMay2.pdf";
+import resume from "./Tyler.js";
 import salty from "../assets/SaltyRoguePhoneCalls.png";
 import tutor from "../assets/TylersTutors.png";
 import "./index.css";
@@ -92,12 +92,7 @@ export class Index extends Component {
               <Modal isOpen={this.state.modal} toggle={this.toogle}>
                 <ModalBody>
                   {/* <img src={resume} alt="?" /> */}
-                  <Document
-                    file={resume} 
-                    onLoadSuccess={this.onDocumentLoadSuccess}
-                  >
-                    <Page pageNumber={1} />
-                  </Document>
+                  
                 </ModalBody>
                 <ModalFooter>
                   <Button color="secondary" onClick={this.toggle}>X</Button>

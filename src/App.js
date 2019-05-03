@@ -15,6 +15,7 @@ function App() {
         <h5 align="center">Captain Finn Web Designs</h5>
         <p>Contact: </p> 
       </div>
+      <script src="//mozilla.github.io/pdf.js/build/pdf.js"></script>
     </div>
   );
 }
