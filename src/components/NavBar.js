@@ -50,10 +50,14 @@ export class NavBar extends Component {
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>
+                  <a href="https://tutordatabase-4958f.firebaseapp.com/" target="_blank" rel="noopener noreferrer">
                     Tyler's Tutors
+                  </a>
                   </DropdownItem>
                   <DropdownItem>
-                    Salty Rogue Real Estate
+                    <a href="https://salty-rogue-app-front-of-house.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                      Salty Rogue Real Estate
+                    </a>
                   </DropdownItem>
                   {/* <DropdownItem divider />
                   <DropdownItem>

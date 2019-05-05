@@ -40,7 +40,7 @@ export class Index extends Component {
           </div>
         </div>
 
-        <a href="https://salty-rogue-app-front-of-house.herokuapp.com/" target="_blank">
+        <a href="https://salty-rogue-app-front-of-house.herokuapp.com/" target="_blank" rel="noopener noreferrer">  
           <section className="section section-light">
             <h2>Salty Rogue Real Estate</h2>
             <p>
@@ -48,7 +48,7 @@ export class Index extends Component {
             </p>
           </section>
         </a>  
-        <a href="https://salty-rogue-app-front-of-house.herokuapp.com/" target="_blank">  
+        <a href="https://salty-rogue-app-front-of-house.herokuapp.com/" target="_blank" rel="noopener noreferrer">
           <div className="pimg2 trans">
             <div className="ptextScreenshot">
               <div>
@@ -59,7 +59,7 @@ export class Index extends Component {
           </div>
         </a>
 
-        <a href="https://tutordatabase-4958f.firebaseapp.com/" target="_blank">
+        <a href="https://tutordatabase-4958f.firebaseapp.com/" target="_blank" rel="noopener noreferrer">
           <section className="section section-dark">
             <h2>Tyler's Tutors</h2>
             <p>
@@ -68,7 +68,7 @@ export class Index extends Component {
           </section>
         </a>
 
-        <a href="https://tutordatabase-4958f.firebaseapp.com/" target="_blank">
+        <a href="https://tutordatabase-4958f.firebaseapp.com/" target="_blank" rel="noopener noreferrer">
           <div className="pimg3 trans">
             <div className="ptextScreenshot">
               <div>
@@ -88,7 +88,7 @@ export class Index extends Component {
         <section className="section section-dark">
           <h2>Resume</h2>
           <p>I'm looking for work as a web developer. I moving into the tech field from education. I worked as a writing tutor at the end of my undergraduate studies, held a teaching assistant position during grad school, and most recently worked, briefly, as an 8th grade English teacher.</p>
-          <p>Though I may be new a young in the web development field, I learn very quickly. I am a dedicated worker who puts in the work needed to acheive mastery.</p>
+          <p>Though I may be new in the web development field, I learn very quickly. I am a dedicated worker who puts in the time needed to acheive mastery.</p>
         </section>
 
         <div className="pimg4 trans">
@@ -97,9 +97,12 @@ export class Index extends Component {
               <Button color="danger" onClick={this.toggle}>Resume</Button>
               <Modal isOpen={this.state.modal} toggle={this.toogle}>
                 <ModalBody>
-                  <a href="https://keen-bhaskara-274627.netlify.com/" target="_blank">
+                  <div>
+                  <a href="https://keen-bhaskara-274627.netlify.com/" target="_blank" rel="noopener noreferrer">
                     Resume
                   </a>
+                    <img src="../assets/T.OlsenMay2.pdf" alt="Resume"/>
+                  </div>
                 </ModalBody>
                 <ModalFooter>
                   <Button color="secondary" onClick={this.toggle}>X</Button>
