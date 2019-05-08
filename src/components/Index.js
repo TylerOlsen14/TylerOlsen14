@@ -86,9 +86,11 @@ export class Index extends Component {
           </a>
 
         <section className="section section-dark">
-          <h2>Resume</h2>
-          <p className="p-bottom">I'm looking for work as a web developer. I moving into the tech field from education. I worked as a writing tutor at the end of my undergraduate studies, held a teaching assistant position during grad school, and most recently worked, briefly, as an 8th grade English teacher.</p>
-          <p className="p-bottom">Though I may be new in the web development field, I learn very quickly. I am a dedicated worker who puts in the time needed to acheive mastery.</p>
+          <div className="p-bottom">
+            <h2>Resume</h2>
+            <p>I'm looking for work as a web developer. I moving into the tech field from education. I worked as a writing tutor at the end of my undergraduate studies, held a teaching assistant position during grad school, and most recently worked, briefly, as an 8th grade English teacher.</p>
+            <p>Though I may be new in the web development field, I learn very quickly. I am a dedicated worker who puts in the time needed to acheive mastery.</p>
+          </div>
         </section>
 
         <div className="pimg4 trans">
