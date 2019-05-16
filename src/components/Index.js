@@ -1,37 +1,52 @@
 import React, { Component } from "react";
 import { Modal, Button, ModalBody, ModalFooter } from "reactstrap";
-// import resume from "../assets/T.OlsenMay2.pdf";
+import { Document, Page } from 'react-pdf';
+import { Link } from 'react-router-dom'
 import salty from "../assets/SaltyRoguePhoneCalls.png";
 import tutor from "../assets/TylersTutors.png";
 import "./index.css";
+import PdfModal from "./PdfModal";
 
 export class Index extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      modal: false
-    };
+  // constructor(props) {
+    // super(props);
+    // this.state = {
+    //   modal: false,
+    //   numPages: null,
+    //   pageNumber: 1,
+    // };
+    // this.toggle = this.toggle.bind(this);
+    // this.routeChange = this.routeChange.bind(this);
+  // }
 
-    this.toggle = this.toggle.bind(this);
-  }
+  // routeChange() {
+  //   let path = `newPath`;
+  //   this.props.history.push('/resume');
+  // }
 
-  state= {
-    numPages: null,
-  }
+  // state= {
+  //   numPages: null,
+  // }
   
-  onDocumentLoadSuccess = (document) => {
-    const { numPages } = document;
-    this.setState({
-      numPages,
-    });
-  };
+  // onDocumentLoadSuccess = (document) => {
+  //   const { numPages } = document;
+  //   this.setState({
+  //     numPages,
+  //   });
+  // };
 
-  toggle() {
-    this.setState(prevState => ({
-      modal: !prevState.modal
-    }));
-  }
+  // toggle() {
+  //   this.setState(prevState => ({
+  //     modal: !prevState.modal
+  //   }));
+  // }
+
+  // nextPath(path) {
+  //   this.props.history.push(path);
+  // }
+
   render() {
+    // const { pageNumber, numPages } = this.state;
     return (
       <div>
         <div className="pimg1">
@@ -95,22 +110,29 @@ export class Index extends Component {
 
         <div className="pimg4 trans">
           <div className="ptext">
-            <span className="border">
-              <Button color="danger" onClick={this.toggle}>Resume</Button>
+              {/* <PdfModal /> */}
+              <Link to="/resume">
+                <Button
+                  color="secondary"
+                  onClick={this.routeChange}
+                >
+                  Resume
+                </Button>
+              </Link>
+              {/* <Button color="danger" onClick={this.toggle}>Resume</Button>
               <Modal isOpen={this.state.modal} toggle={this.toogle}>
                 <ModalBody>
                   <div>
                   <a href="https://keen-bhaskara-274627.netlify.com/" target="_blank" rel="noopener noreferrer">
                     Resume
                   </a>
-                    <img src="../assets/T.OlsenMay2.pdf" alt="Resume"/>
+                    <img src="../assets/T.OlsenMay16.pdf" alt="Resume"/>
                   </div>
                 </ModalBody>
                 <ModalFooter>
                   <Button color="secondary" onClick={this.toggle}>X</Button>
                 </ModalFooter>
-              </Modal>
-            </span>
+              </Modal> */}
           </div>
         </div>
       </div>
