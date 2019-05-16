@@ -111,14 +111,15 @@ export class Index extends Component {
         <div className="pimg4 trans">
           <div className="ptext">
               {/* <PdfModal /> */}
-              <Link to="/resume">
+              <a href="https://keen-bhaskara-274627.netlify.com/" target="_blank" rel="noopener noreferrer">
                 <Button
-                  color="secondary"
-                  onClick={this.routeChange}
+                  color="primary"
+                  size="lg"
+                  // onClick={this.routeChange}
                 >
-                  Resume
+                    Resume
                 </Button>
-              </Link>
+                </a>
               {/* <Button color="danger" onClick={this.toggle}>Resume</Button>
               <Modal isOpen={this.state.modal} toggle={this.toogle}>
                 <ModalBody>

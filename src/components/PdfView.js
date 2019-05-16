@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Document, Page } from "react-pdf";
-const path = '../../public/TOlsenMay16.pdf'
+const path = '../assets/TOlsenMay16.pdf'
 
 export default class App extends Component {
   state = { 
