@@ -78,7 +78,7 @@ export class Index extends Component {
           <section className="section section-dark">
             <h2>Tyler's Tutors</h2>
             <p>
-              Another simple app, this is meant ot track and re-call data for an imaginary tutoring service. We can track the teachers and the students in separate locations and we can update information as it changes. This uses Vue as a framework and Firebase/Firestore as a database.
+              Another simple app, this is meant to track and re-call data for an imaginary tutoring service. We can track the teachers and the students in separate locations and we can update information as it changes. This uses Vue as a framework and Firebase/Firestore as a database.
             </p>
           </section>
         </a>
