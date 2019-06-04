@@ -3,6 +3,7 @@ import { Modal, Button, ModalBody, ModalFooter } from "reactstrap";
 import { Document, Page } from 'react-pdf';
 import { Link } from 'react-router-dom'
 import salty from "../assets/SaltyRoguePhoneCalls.png";
+import OneApp from "../assets/Screen Shot 2019-06-04 at 10.54.28 AM.png";
 import tutor from "../assets/TylersTutors.png";
 import "./index.css";
 import PdfModal from "./PdfModal";
@@ -55,20 +56,20 @@ export class Index extends Component {
           </div>
         </div>
 
-        <a href="https://salty-rogue-app-front-of-house.herokuapp.com/" target="_blank" rel="noopener noreferrer">  
+        <a href="https://salty-rogue-app-one-app.herokuapp.com/" target="_blank" rel="noopener noreferrer">  
           <section className="section section-light">
             <h2>Salty Rogue Real Estate</h2>
             <p>
-              A simple app meant to be used to make record of phone calls. This was made for a local real estate firm who makes a lot of phone calls and speaks with a lot of people. This is a simple way for them to keep track of who they talk to and what the conversation was about. 
+              There are two apps here. One is a simple database for phone calls. It records the name, the phone number, and any other notes that might need to be kept. The other is database of potential business. Utah county released a list of those properties that might be having trouble with their property taxes. We wrote a JavaScript app that will use the numbers from that list to find a name and mailing address for the owner. We are planning on using that information to do business with the owner. 
             </p>
           </section>
         </a>  
-        <a href="https://salty-rogue-app-front-of-house.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+        <a href="https://salty-rogue-app-one-app.herokuapp.com/" target="_blank" rel="noopener noreferrer">
           <div className="pimg2 trans">
             <div className="ptextScreenshot">
               <div>
                 {/* <span className="border">Image two text</span> */}
-                <img src={salty} alt="MERN" className="appScreenshot" />
+                <img src={OneApp} alt="MERN" className="appScreenshot" />
               </div>
             </div>
           </div>
